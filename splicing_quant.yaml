@@ -287,4 +287,4 @@ dependencies:
     - webencodings==0.5.1
     - yarg==0.1.9
     - zipp==3.20.2
-prefix: /home/runyan.m/.conda/envs/myenv
+prefix: /home/runyan.m/.conda/envs/splicing
