@@ -44,7 +44,8 @@ python src/getReference.py --version 29 --download gtf --output_dir GRCh38
 
 3. To run all tools/scripts that are detailed below use the `run_all.sh` script. This script will run Leafcutter, rMATS, and
 SpliSER and process the output from each tool.
-- Run: ```./src/run_all.sh \
+- Run: ```bash
+  ./src/run_all.sh \
   --bam_file_list test_data/bam_files.tsv \
   --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz \
   --splice_table output/GRCh38_v29_splice_table.txt \
