@@ -14,7 +14,9 @@ This repository contains scripts to run the splicing quantification tools Leafcu
 
     `conda activate splicing`
 
-3. (workshop) From within the project directory use this command to get the test data:
+    `make install_renv`
+
+4. (workshop) From within the project directory use this command to get the test data:
 
    `cp -r /work/talisman/mrunyan/test_data`
 
