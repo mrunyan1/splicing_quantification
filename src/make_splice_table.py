@@ -18,7 +18,7 @@ def main():
     args = parser.parse_args()
 
     gtf_file = args.gtf_file
-    paralog_file = "src/paralogs_GRCh38.txt"
+    paralog_file = "test_data/paralogs_GRCh38.txt"
     output_file = args.output_file
 
     print("Reading GTF file...")
