@@ -5,7 +5,7 @@ This repository contains scripts to run the splicing quantification tools Leafcu
 1. Clone this repository and move into the project directory:
 
     ```
-   git clone https://github.com/mrunyan1/splicing_quantification.git
+   git clone git@github.com:mrunyan1/splicing_quantification.git
     ```
 
     ```
