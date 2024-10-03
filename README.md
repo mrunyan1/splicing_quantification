@@ -8,7 +8,7 @@ This repository contains scripts to run the splicing quantification tools Leafcu
    git clone https://github.com/mrunyan1/splicing_quantification.git
     ```
 
-    ```cd splicing_quantification```
+    ``` cd splicing_quantification ```
 
 3. Run the following make command to make the conda environment and download required repos:
     
