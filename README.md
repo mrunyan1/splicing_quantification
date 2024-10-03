@@ -178,9 +178,9 @@ process, combine, and output functions. This script runs all three steps, the co
 is still slow for large datasets. Regtools is used to extract splice junctions from BAM files. SpliSER is then used to quantify SSE (splice-site strength estimate)
 for each splice site of the extracted junctions.
 - Run:
-```
-python src/run_spliser.py --bam_file_list test_data/bam_files.tsv --output_dir output --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --n_threads 20
-```
+    ```
+    python src/run_spliser.py --bam_file_list test_data/bam_files.tsv --output_dir output --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --n_threads 20
+    ```
     - `--bam_file_list`: TSV file containing BAM file paths.
     - `--output_dir`: Directory where output files will be saved.
     - `--gtf_file`: Path to the GTF file.
@@ -195,17 +195,19 @@ The final output is spliser_outputAll.DiffSpliSER.tsv which contains the SSE val
 
 - Description: For each transcript in the splice table this scripts adds respective SSE values and genomic positions from SpliSER quantification to the last two columns.
 - Run:
-```
-python src/spliser_to_splice_table.py \
-    --spliser_output output/spliser/spliser_outputAll.DiffSpliSER.tsv \
-    --splice_table output/GRCh38_v29_splice_table.txt \
-    --output_file output/spliser/spliser_GRCh38_v29_splice_table.txt \
-    --n_threads 20
-```
+      ```
+    python src/spliser_to_splice_table.py \
+        --spliser_output output/spliser/spliser_outputAll.DiffSpliSER.tsv \
+        --splice_table output/GRCh38_v29_splice_table.txt \
+        --output_file output/spliser/spliser_GRCh38_v29_splice_table.txt \
+        --n_threads 20
+      ```
+
     - `--spliser_ouptut`: Path to the SpliSER DiffSpliSER.tsv file.
     - `--splice_table`: Path to the splice table file.
     - `--output_file`: Path to the output file.
     - `--n_threads`: Number of threads to use.
+    
 - Output:
   - A splice table with SSE values and positions from SpliSER added to the last two columns of the table.
 
