@@ -31,7 +31,7 @@ and the paths should be relative to the TSV file location. Each line can contain
 
 
 ### General Usage
-1. Run the `getReference.py` script to download the GTF and respective reference genome.
+1. Run the `getReference.py` script to download the GTF.
 
 `
 python src/getReference.py --version 29 --download gtf --output_dir GRCh38
