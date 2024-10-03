@@ -68,7 +68,9 @@ SpliSER and process the output from each tool.
 - Run:
 ```
 ./src/run_all.sh --bam_file_list test_data/bam_files.tsv \
---gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --splice_table output/GRCh38_v29_splice_table.txt --output_dir output --n_threads 20
+                 --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz \
+                 --splice_table output/GRCh38_v29_splice_table.txt \
+                 --output_dir output --n_threads 20
 ```
 
 ### Leafcutter
