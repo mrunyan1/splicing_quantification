@@ -195,13 +195,13 @@ The final output is spliser_outputAll.DiffSpliSER.tsv which contains the SSE val
 
 - Description: For each transcript in the splice table this scripts adds respective SSE values and genomic positions from SpliSER quantification to the last two columns.
 - Run:
-      ```
+  ```
     python src/spliser_to_splice_table.py \
         --spliser_output output/spliser/spliser_outputAll.DiffSpliSER.tsv \
         --splice_table output/GRCh38_v29_splice_table.txt \
         --output_file output/spliser/spliser_GRCh38_v29_splice_table.txt \
         --n_threads 20
-      ```
+  ```
 
     - `--spliser_ouptut`: Path to the SpliSER DiffSpliSER.tsv file.
     - `--splice_table`: Path to the splice table file.
