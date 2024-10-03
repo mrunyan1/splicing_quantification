@@ -4,27 +4,23 @@ This repository contains scripts to run the splicing quantification tools Leafcu
 ## Setup
 1. Clone this repository and move into the project directory:
 
-    `git clone https://github.com/mrunyan1/splicing_quantification.git `
+    ```git clone https://github.com/mrunyan1/splicing_quantification.git ```
 
-    `cd splicing_quantification`
+    ```cd splicing_quantification```
 
 2. Run the following make command to make the conda environment and download required repos:
     
-    `make setup`
+    ```make setup```
 
-    `conda activate splicing`
+    ```conda activate splicing```
 
-    `make install_renv`
+    ```make install_renv```
 
 4. (workshop) From within the project directory use this command to get the test data:
 
-   `cp -r /work/talisman/mrunyan/test_data .`
+   ```cp -r /work/talisman/mrunyan/test_data .```
 
-```
-function test() {
-  console.log("This code will have a copy button to the right of it");
-}
-```
+
 
 
 ## Usage
