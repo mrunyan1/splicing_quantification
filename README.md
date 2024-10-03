@@ -1,5 +1,5 @@
 
-This repository contains scripts to run the splicing quantification tools Leafcutter, rMATS and SpliSER. The output from rMATS and Leafcutter is processed to obtain PSI (percent splice-in) values for all splice sites. The results from each tool are also formatted as a "splice table" to be used with machine learning models such as SpliceAI.
+This repository contains scripts to run the splicing quantification tools Leafcutter, rMATS and SpliSER. The output from rMATS and Leafcutter is processed to convert PSI (percent splice-in) values exons or introns to splice-site PSI values. The results from each tool are also formatted as a "splice table" which maps each splice-site (and PSI value) to its respective transcript.
 
 ## Setup
 1. Clone this repository and move into the project directory:
