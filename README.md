@@ -8,19 +8,29 @@ This repository contains scripts to run the splicing quantification tools Leafcu
    git clone https://github.com/mrunyan1/splicing_quantification.git
     ```
 
-    ``` cd splicing_quantification ```
+    ```
+   cd splicing_quantification
+    ```
 
 3. Run the following make command to make the conda environment and download required repos:
     
-    ```make setup```
+    ```
+   make setup
+    ```
 
-    ```conda activate splicing```
+    ```
+   conda activate splicing
+    ```
 
-    ```make install_renv```
+    ```
+   make install_renv
+    ```
 
-4. (workshop) From within the project directory use this command to get the test data:
+5. (workshop) From within the project directory use this command to get the test data:
 
-   ```cp -r /work/talisman/mrunyan/test_data .```
+   ```
+   cp -r /work/talisman/mrunyan/test_data .
+   ```
 
 
 
@@ -36,9 +46,9 @@ and the paths should be relative to the TSV file location. Each line can contain
 ### General Usage
 1. Run the `getReference.py` script to download the GTF.
 
-`
+```
 python src/getReference.py --version 29 --download gtf --output_dir GRCh38
-`
+```
 
 - --version: Specify the version number of the GTF file to download (e.g., 29).
 - --download: Choose whether to download GTF and/or reference genome (gtf, ref, or both).
@@ -46,14 +56,19 @@ python src/getReference.py --version 29 --download gtf --output_dir GRCh38
 
 2. Run `make_splice_table.py` script to generate a table with principal transcript information. This table will be where we add PSI values to and can be used as input to SpliceAI.
 
-`python src/make_splice_table.py --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --output_file output/GRCh38_v29_splice_table.txt`
+```
+python src/make_splice_table.py --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --output_file output/GRCh38_v29_splice_table.txt
+```
 
 - --gtf_file: Path to the GTF file.
 - --output_file: Path to the output file.
 
 3. To run all tools/scripts that are detailed below use the `run_all.sh` script. This script will run Leafcutter, rMATS, and
 SpliSER and process the output from each tool.
-- Run: `./src/run_all.sh --bam_file_list test_data/bam_files.tsv --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --splice_table output/GRCh38_v29_splice_table.txt --output_dir output --n_threads 20`
+- Run:
+```
+./src/run_all.sh --bam_file_list test_data/bam_files.tsv --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --splice_table output/GRCh38_v29_splice_table.txt --output_dir output --n_threads 20
+```
 
 ### Leafcutter
 `run_leafcutter.py`
