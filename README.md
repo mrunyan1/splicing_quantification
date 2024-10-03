@@ -54,7 +54,7 @@ python src/getReference.py --version 29 --download gtf --output_dir GRCh38
 - --download: Choose whether to download GTF and/or reference genome (gtf, ref, or both).
 - --output_dir: Directory where the downloaded files will be saved.
 
-2. Run `make_splice_table.py` script to generate a table with principal transcript information. This table will be where we add PSI values to and can be used as input to SpliceAI.
+2. Run `make_splice_table.py` script to generate a table with principal transcript information. This table will be populated with splice-site PSI values and respective coordinates.
 
 ```
 python src/make_splice_table.py --gtf_file GRCh38/gencode.v29.primary_assembly.annotation.gtf.gz --output_file output/GRCh38_v29_splice_table.txt
