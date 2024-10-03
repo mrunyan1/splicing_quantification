@@ -19,10 +19,11 @@ install_renv:
 	@echo "Make sure you have activated the environment with: conda activate $(ENV_NAME)"
 	Rscript -e "if (!requireNamespace('renv', quietly = TRUE)) install.packages('renv'); renv::restore()"
 
-# run everything together
-.PHONY: setup
-setup: environment clone
-	@echo "Setup complete. Now, activate the environment with: conda activate $(ENV_NAME) and then run 'make install_renv'"
+# install the R environment using renv
+.PHONY: install_renv
+install_renv:
+	@echo "Make sure you have activated the environment with: conda activate $(ENV_NAME)"
+	Rscript -e "if (!requireNamespace('renv', quietly = TRUE)) install.packages('renv', repos='https://cran.r-project.org'); renv::restore()"
 
 # clean up repos if necessary
 .PHONY: clean
