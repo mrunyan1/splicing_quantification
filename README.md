@@ -174,8 +174,7 @@ and calculates PSI values for each exon start/end site.
 `run_spliser.py` 
 
 - Description: Runs SpliSER using the BAM files provided from the bam files TSV and the GTF file. Spliser has three steps
-process, combine, and output functions. This script runs all three steps, the combine step is parallelized by chromosome but 
-is still slow for large datasets. Regtools is used to extract splice junctions from BAM files. SpliSER is then used to quantify SSE (splice-site strength estimate)
+process, combine, and output functions. This script runs all three steps. Regtools is used to extract splice junctions from BAM files. SpliSER is then used to quantify SSE (splice-site strength estimate)
 for each splice site of the extracted junctions.
 - Run:
     ```
