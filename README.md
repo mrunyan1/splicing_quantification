@@ -20,6 +20,11 @@ This repository contains scripts to run the splicing quantification tools Leafcu
 
    `cp -r /work/talisman/mrunyan/test_data .`
 
+```
+function test() {
+  console.log("This code will have a copy button to the right of it");
+}
+```
 
 
 ## Usage
