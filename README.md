@@ -37,10 +37,10 @@ This repository contains scripts to run the splicing quantification tools Leafcu
 
 ## Usage
 ### Required data
-- BAM files: RNA-seq data in BAM format.
-- BAM file list: A TSV file containing paths to BAM files. The TSV should be in the same location as the BAM files
-and the paths should be relative to the TSV file location. Each line can contain multiple columns representing replicate BAM files.
 - GTF file: A GTF file containing gene annotations. The GTF file can be downloaded using the `getReference.py` script.
+- BAM files: RNA-seq data in BAM format.
+- BAM file list: A TSV file containing relative paths to BAM files. Each line is a sample and with all replicates listed.
+
 
 
 ### General Usage
