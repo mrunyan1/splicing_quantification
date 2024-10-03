@@ -96,7 +96,9 @@ values for each intron cluster.
 - Description: Processes the PSI data from LeafCutter. Converts intron start/end sites to exon start/end sites 
 and calculates PSI values for each exon start/end site.
 - Run:
-  ```python src/process_leafcutter_psi.py --input_file output/leafcutter/leafcutter_psi.txt.gz --output_file output/leafcutter/leafcutter_per_site_psi.csv
+  
+  ```
+  python src/process_leafcutter_psi.py --input_file output/leafcutter/leafcutter_psi.txt.gz --output_file output/leafcutter/leafcutter_per_site_psi.csv
   ```
     - `--input_file`: Path to the LeafCutter PSI file.
     - `--output_file`: Path to the output file.
