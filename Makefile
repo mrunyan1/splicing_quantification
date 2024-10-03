@@ -9,8 +9,8 @@ environment:
 # clone necessary repositories
 .PHONY: clone
 clone:
-	git clone https://github.com/mrunyan1/SpliSER.git -b parallel-combine
-	git clone https://github.com/mrunyan1/leafcutter.git
+	git clone git@github.com:mrunyan1/SpliSER.git -b parallel-combine
+	git clone git@github.com:mrunyan1/leafcutter.git
 
 # install the R environment using renv
 .PHONY: install_renv
